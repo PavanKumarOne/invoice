@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+<body>
+    <div style="background-color: #fbfbfb;">
+    <!-- ***************************************************** -->
+
+        <div style="border : 1px solid #4190f2; background-color:#4190f2;color:white;font-size:22px;text-align : center">
+          <p>${invoice.customer_name}</p>
+        </div>
+    <!-- ***************************************************** -->
+
+        <div style="width:60%; margin:auto;">
+          <p>Dear Customer,</p>
+          <p>Thanks for your business.The invoice ${invoice.invoice_number} is attached with this email.You can choose the easy way out and <a href= https://www.google.com/ >pay online for this invoice.</a>Here's an overview of the invoice for your reference.</p>
+    <!-- ***************************************************** -->
+       
+        <div style="border : 1px solid #ddd289; background-color:#fefff1;height:400px;">
+         <div style="height :25%">
+          <h4 style="text-align : center;">INVOICE AMOUNT</h4>
+          <p style="text-align : center;color : #d61916;font-size : 22px;" class="price">${invoice.balance} ₹19,997.00</p>
+        </div>
+          <hr style="width: 90%;background-color: #ddd289;height: 1px;border: none;">
+    <!-- ***************************************************** -->
+        <div style="display: flex;justify-content: space-evenly;">
+            <div>
+              <p >Invoice No</p>
+              <p >Invoice Date</p>
+              <p >Due Date</p>
+            </div>
+            <div>
+                <p style="font-weight: bold;" >INV-00014</p>
+                <p style="font-weight: bold;" >05/04/2022 </p>
+                <p style="font-weight: bold;" >05/04/2022 </p>
+            </div> 
+        </div> 
+        <button style="width :20%;height:35px;color:white;background-color:#4dcf59;border:none;margin:auto;margin-top:5%;display:flex;align-items:center;justify-content:center;">PAY NOW</button>
+
+    </div>
+    <!-- ***************************************************** -->
+          <div style="margin:4% 0px">
+            <div style="margin:4% 0px">It was great working with you. Looking forward to working with you again.</div>
+            <div >Regards,</div>
+            <div style="color:#8c8c8c;">Care Onecare</div>
+            <div style="color:#8c8c8c;">Wellworks Technologies Pvt Ltd</div>        
+          </div>
+          
+    <!-- ***************************************************** -->
+      </div>
+        
+      
+</body>
+</html>
